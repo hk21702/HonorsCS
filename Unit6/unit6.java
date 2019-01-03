@@ -34,12 +34,17 @@ public class unit6 {
                 q35();
                 init = false;
                 break;
+            case 81:
+                q81();
+                init = false;
+                break;
             default:
                 System.out.println("Invalid qID");
                 init2 = true;
                 break;
             }
         } while (init);
+        scan.close();
 
     }
 
@@ -49,6 +54,7 @@ public class unit6 {
         String word1 = scan.next(), word2 = scan.next();
 
         System.out.println(word2.toLowerCase() + " " + word1.toUpperCase());
+        scan.close();
     }
 
     public static void q15() {
@@ -56,6 +62,7 @@ public class unit6 {
         System.out.println("Please enter a character");
         String chara = scan.next();
         System.out.println("The decimal value assinged to " + chara + " is " + ((int) chara.charAt(0)));
+        scan.close();
     }
 
     public static void q22() {
@@ -65,6 +72,7 @@ public class unit6 {
         chara = chara.toUpperCase();
         char a = chara.charAt(chara.length() - 1);
         System.out.println("The last letter of " + chara + " is " + a);
+        scan.close();
     }
 
     public static void q35() {
@@ -74,16 +82,16 @@ public class unit6 {
             System.out.println("Please enter a word atleast two characters long");
             word1 = scan.next();
         } while (word1.length() < 2);
-        int place1 =(int) (Math.random() * word1.length()), place2 = -1;
+        int place1 = (int) (Math.random() * word1.length()), place2 = -1;
         System.out.println(place1);
         while (place2 == -1 | place2 == place1) {
-            place2 =(int) (Math.random() * word1.length());
+            place2 = (int) (Math.random() * word1.length());
             System.out.println(place2);
         }
 
         int dp1 = Math.min(place1, place2);
         int dp2 = Math.max(place1, place2);
-        String w1 = word1.substring(0,dp1);
+        String w1 = word1.substring(0, dp1);
         System.out.println(w1);
         char c1 = word1.charAt(dp1);
         System.out.println(c1);
@@ -91,8 +99,35 @@ public class unit6 {
         String w2 = word1.substring(dp2);
         char c2 = word1.charAt(dp2);
 
-        String w3 = word1.substring(dp2+1,word1.length());
+        String w3 = word1.substring(dp2 + 1, word1.length());
 
-        System.out.println(w1+c1+w2+c2+w3);
+        System.out.println(w1 + c1 + w2 + c2 + w3);
+        scan.close();
+    }
+
+    public static void q81() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter a 3-digit number in hexadecimal");
+        String hex = scan.next();
+        char a = hex.charAt(0);
+        char b = hex.charAt(1);
+        char c = hex.charAt(2);
+
+        int aV = 0, bV = 0, cV = 0;
+
+        if (a < 48 | a > 57)
+            aV = a - 55;
+        else
+            aV = a - 48;
+        if (b < 48 | b > 57)
+            bV = b - 55;
+        else
+            bV = b - 48;
+        if (c < 48 | b > 57)
+            cV = c - 55;
+        else
+            cV = c - 48;
+        System.out.println(aV * 256 + (bV * 16) + cV);
+        scan.close();
     }
 }
