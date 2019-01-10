@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - u62q2",
+            "request": "launch",
+            "mainClass": "u62q2",
+            "projectName": "HonorsCS_fb9debc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - u62q1",
+            "request": "launch",
+            "mainClass": "u62q1",
+            "projectName": "HonorsCS_fb9debc"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - unit3",
             "request": "launch",
             "cwd": "${workspaceFolder}",
@@ -141,7 +155,7 @@
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
             "stopOnEntry": false,
-            "mainClass": "scanner",
+            "mainClass": "",
             "args": ""
         }
     ]
