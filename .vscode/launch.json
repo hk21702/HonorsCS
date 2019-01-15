@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - unit7",
+            "request": "launch",
+            "mainClass": "unit7",
+            "projectName": "HonorsCS_fb9debc"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - u62q2",
             "request": "launch",
             "mainClass": "u62q2",

@@ -14,8 +14,8 @@ public class unit7 {
                 System.out.println("Invalid ID");
             }
             switch (id) {
-            case 11:
-                q11();
+            case 31:
+                q31();
                 init = false;
                 break;
             default:
@@ -26,7 +26,30 @@ public class unit7 {
         scan.close();
     }
 
-    public static void q11() {
+    public static void q31() {
+        Scanner scan = new Scanner(System.in);
 
+        System.out.println("Please enter a word");
+
+        String word = scan.next();
+        String y = "zZaA";
+
+        for (int i = 0; i != word.length(); i++) {
+
+            char x = word.charAt(i);
+
+            if (x == y.charAt(0)) {
+                x = y.charAt(2);
+                System.out.print(Character.toString(x));
+            } else if (x == y.charAt(1)) {
+                x = y.charAt(3);
+                System.out.print(Character.toString(x));
+            } else {
+                x += 1;
+                System.out.print(Character.toString(x));
+            }
+        }
+        scan.close();
     }
+
 }
