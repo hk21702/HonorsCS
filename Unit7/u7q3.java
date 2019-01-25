@@ -15,5 +15,6 @@ public class u7q3 {
         }
 
         System.out.println("The sum of the entered integers is " + output);
+        scan.close();
     }
 }

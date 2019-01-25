@@ -27,5 +27,6 @@ public class u7q1 {
             count++;
             output = 3 * count;
         }
+        scan.close();
     }
 }

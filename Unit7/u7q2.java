@@ -13,5 +13,6 @@ public class u7q2 {
             System.out.print(word.charAt(length));
             length--;
         }
+        scan.close();
     }
 }
