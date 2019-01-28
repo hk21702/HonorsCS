@@ -1,3 +1,5 @@
+package Unit7;
+
 import java.util.*;
 
 public class u7q2 {

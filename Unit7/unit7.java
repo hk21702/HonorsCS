@@ -1,5 +1,7 @@
+package Unit7;
 import java.util.*;
 
+//package com.unit7.unit7;
 public class unit7 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

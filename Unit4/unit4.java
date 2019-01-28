@@ -1,3 +1,5 @@
+package Unit4;
+
 import java.util.*;
 
 public class unit4 {
@@ -187,12 +189,12 @@ public class unit4 {
         Scanner scan = new Scanner(System.in);
 
         boolean init = true;
-
+        int x = 0;
         int number = 0;
 
         do {
             try {
-                System.out.println("Please enter an integer")
+                System.out.println("Please enter an integer");
                 number = scan.nextInt();
                 init = false;
             } catch (InputMismatchException e) {
@@ -201,20 +203,20 @@ public class unit4 {
             }
         } while (init);
 
-        if (20<x<=100){
+      /*  if (20<x<100){
             if(number%3==0 & number%4==0)
                 System.out.println(number + " has 3 and 4 as factors.");
             
             else if(number%3==0)
                 System.out.println(number + " has 3 as a factor.");
             
-            else if (numner%4==0)
+            else if (number%4==0)
                 System.out.println(number + " has 4 as a factor.");
 
             else
                 System.out.println(number + " does not have a factor of either 3 or 4");
             
         }
-
+        */
     }
 }

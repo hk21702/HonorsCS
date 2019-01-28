@@ -1,3 +1,4 @@
+package Unit5;
 import java.util.*;
 
 public class unit5 {
@@ -9,7 +10,7 @@ public class unit5 {
         do {
             try {
                 System.out.println("Enter Q ID");
-                id = scan.nextint;
+                id = scan.nextInt();
                 switch (id) {
                 case 81:
                     init = false;
@@ -36,20 +37,5 @@ public class unit5 {
         System.out.println("Will there be early, or late dismissal? (Early, Late, None)");
         String type = scan.next();
 
-        switch (type) {
-            case Early:
-                
-                break;
-            case Late:
-
-                break;
-            case None:
-
-                break;
-        
-            default:
-            System.out.println("Invalid Type");
-                break;
-        }
     }
 }
