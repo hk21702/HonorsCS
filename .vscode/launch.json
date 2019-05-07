@@ -171,6 +171,13 @@
             "stopOnEntry": false,
             "mainClass": "",
             "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - int",
+            "request": "launch",
+            "mainClass": "",
+            "console": "integratedTerminal"
         }
     ]
 }
